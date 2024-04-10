@@ -1,0 +1,61 @@
+.hero {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, rgb(22, 33, 62), rgb(35, 22, 62));
+  position: relative;
+  z-index: -1;
+
+  .wrapper {
+    max-width: 966px;
+    height: 100%;
+    margin: auto;
+
+    .textContainer {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      h2 {
+        font-size: 30px;
+        letter-spacing: 10px;
+        color: rebeccapurple;
+      }
+
+      h1 {
+        font-size: 80px;
+      }
+
+      .buttons {
+        button {
+          padding: 20px;
+          border: 1px solid lightgray;
+          border-radius: 10px;
+          margin-right: 20px;
+          background-color: transparent;
+          color: lightgrey;
+          cursor: pointer;
+          font-weight: 300;
+        }
+
+        .contact-btn {
+          background-color: lightgrey;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .imageContainer {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+    img {
+      mix-blend-mode: luminosity;
+    }
+  }
+}
