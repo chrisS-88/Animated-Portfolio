@@ -1,13 +1,26 @@
 import React from "react";
 import "./Navbar.scss";
+import { motion } from "framer-motion";
+import Sidebar from "../sidebar/Sidebar";
 
 function Navbar() {
   return (
     <div className="navbar">
-      {/* sidebar */}
+      <Sidebar />
       <div className="wrapper">
-        <span>Portfolio.CS</span>
-        <div className="socials">
+        <motion.span
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          Portfolio
+        </motion.span>
+        <motion.div
+          className="socials"
+          initial={{ y: -100 }}
+          animate={{ y: 0 }}
+          transition={{ type: "spring", delay: 0.3, stiffness: 200 }}
+        >
           <a href="#" target="_blank">
             <img src="/github-logo.png" alt="social icon" width="22px" />
           </a>
@@ -17,7 +30,7 @@ function Navbar() {
           <a href="#" target="_blank">
             <img src="/mail-logo.png" alt="social icon" width="22px" />
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
