@@ -1,7 +1,7 @@
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
-  background: linear-gradient(180deg, rgb(22, 33, 62), rgb(35, 22, 62));
+  background: linear-gradient(180deg, rgb(5, 59, 80), rgb(23, 107, 135));
   position: relative;
   z-index: -1;
 
@@ -16,12 +16,12 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 40px;
+      gap: 20px;
 
       h2 {
         font-size: 30px;
         letter-spacing: 10px;
-        color: rebeccapurple;
+        color: rgb(23, 107, 135);
       }
 
       h1 {
@@ -36,8 +36,8 @@
           margin-right: 20px;
           background-color: transparent;
           color: lightgrey;
-          cursor: pointer;
           font-weight: 300;
+          cursor: pointer;
         }
 
         .contact-btn {
@@ -56,6 +56,17 @@
 
     img {
       mix-blend-mode: luminosity;
+      opacity: 80%;
     }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -50px;
+    white-space: nowrap;
+    color: rgba(211, 211, 211, 0.08);
+    width: 50%;
+    font-weight: bold;
   }
 }

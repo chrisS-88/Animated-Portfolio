@@ -7,7 +7,7 @@ function ToggleButton({ setOpen }) {
       <svg width="23" height="52" viewBox="0 0 23 23">
         <motion.path
           strokeWidth="3"
-          stroke="rgb(22, 33, 62)"
+          stroke="rgb(5, 59, 80)"
           strokeLinecap="round"
           variants={{
             // closed: { d: "M 2 2.5 L 20 2.5" },
@@ -17,7 +17,7 @@ function ToggleButton({ setOpen }) {
         />
         <motion.path
           strokeWidth="3"
-          stroke="rgb(22, 33, 62)"
+          stroke="rgb(5, 59, 80)"
           strokeLinecap="round"
           d="M 2 9.423 L 20 9.423"
           variants={{
@@ -27,7 +27,7 @@ function ToggleButton({ setOpen }) {
         />
         <motion.path
           strokeWidth="3"
-          stroke="rgb(22, 33, 62)"
+          stroke="rgb(5, 59, 80)"
           strokeLinecap="round"
           variants={{
             closed: { d: "M 2 16.346 L 20 16.346 " },
