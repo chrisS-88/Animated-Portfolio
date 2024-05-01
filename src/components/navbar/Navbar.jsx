@@ -21,14 +21,14 @@ function Navbar() {
           animate={{ y: 0 }}
           transition={{ type: "spring", delay: 0.3, stiffness: 200 }}
         >
-          <a href="#" target="_blank">
-            <img src="/github-logo.png" alt="social icon" width="22px" />
+          <a href="https://github.com/chrisS-88" target="_blank">
+            <img src="/github-logo.png" alt="social icon" width="32px" />
+          </a>
+          <a href="https://www.linkedin.com/in/chris-smart88/" target="_blank">
+            <img src="/in-logo.png" alt="social icon" width="32px" />
           </a>
           <a href="#" target="_blank">
-            <img src="/in-logo.png" alt="social icon" width="22px" />
-          </a>
-          <a href="#" target="_blank">
-            <img src="/mail-logo.png" alt="social icon" width="22px" />
+            <img src="/mail-logo.png" alt="social icon" width="32px" />
           </a>
         </motion.div>
       </div>

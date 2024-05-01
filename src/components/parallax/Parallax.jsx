@@ -11,7 +11,6 @@ function Parallax({ type }) {
   });
 
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const xStars = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
 
   return (
     <div
@@ -27,8 +26,7 @@ function Parallax({ type }) {
       <motion.h1 style={{ y: yText }}>
         {type === "about" ? "About Me" : "Portfolio"}
       </motion.h1>
-      <motion.div className="trees"></motion.div>
-      <motion.div className="stars" style={{ x: xStars, y: yText }}></motion.div>
+      <motion.div className="bg"></motion.div>
     </div>
   );
 }
