@@ -14,11 +14,16 @@
 
     h1 {
       font-size: 75px;
+      line-height: 70px;
     }
 
     .item {
       h2 {
         font-size: 22px;
+        font-weight: 300;
+      }
+
+      span {
         font-weight: 200;
       }
     }
@@ -26,5 +31,40 @@
 
   .formContainer {
     flex: 1;
+    position: relative;
+
+    .contactSvg {
+      stroke: rgb(205, 117, 3);
+      position: absolute;
+      margin: auto;
+      z-index: 1;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      z-index: 2;
+
+      input,
+      textarea {
+        padding: 18px;
+        background-color: transparent;
+        border: 1px solid lightgrey;
+        border-radius: 8px;
+        color: lightgrey;
+        z-index: 2;
+      }
+
+      button {
+        padding: 18px;
+        color: lightgray;
+        background-color: rgb(32, 0, 216);
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        z-index: 2;
+      }
+    }
   }
 }
